@@ -1,0 +1,19 @@
+{
+  "name": "task2",
+  "version": "1.0.0",
+  "description": "\u001b[A\u001b[A\u001b[B\u001b[Btask2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olzq/react-training.git"
+  },
+  "author": "Olzhas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olzq/react-training/issues"
+  },
+  "homepage": "https://github.com/olzq/react-training#readme"
+}
