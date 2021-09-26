@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/olzq/react-training/issues"
   },
-  "homepage": "https://github.com/olzq/react-training#readme"
+  "homepage": "https://github.com/olzq/react-training#readme",
+  "devDependencies": {
+    "webpack": "^5.54.0"
+  }
 }
