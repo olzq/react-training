@@ -4,8 +4,8 @@
   "description": "\u001b[A\u001b[A\u001b[B\u001b[Btask2",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config ./webpack.config.js --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "cross-env NODE_ENV=dev webpack serve --config ./webpack.dev.conf.js --mode development --open --hot",
+    "build": "cross-env NODE_ENV=prod webpack --config ./webpack.prod.conf.js --mode production"
   },
   "repository": {
     "type": "git",
