@@ -44,7 +44,7 @@ module.exports = {
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: './pulic',
+                            publicPath: './public',
                         },
                     },
                     'css-loader',
@@ -56,7 +56,7 @@ module.exports = {
                 use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: './pulic',
+                            publicPath: './public',
                         },
                     },
                     'css-loader'
