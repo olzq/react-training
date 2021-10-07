@@ -1,7 +1,14 @@
 import React from 'react';  
 import ReactDOM from 'react-dom';  
 import App from './App.js';  
-  
-import './style/style.css'
+import HomePage from './components/HomePage';
+import './style/reset.css'
 
-ReactDOM.render(<App />, document.getElementById('app'));  
+ReactDOM.render(
+  <React.StrictMode>
+    <App>
+        <HomePage/>
+    </App>
+  </React.StrictMode>,
+  document.getElementById('app')
+);  
