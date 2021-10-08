@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MovieService from '../../../containers/StaticMockData'
-import MovieCard from '../movie-card/MovieCard'
+import MovieCard from './movie-card/MovieCard'
 
 const Wrapper = styled.div`
     display: grid;

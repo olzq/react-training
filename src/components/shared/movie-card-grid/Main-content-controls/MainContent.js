@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Controls from "./Controls"
-import MovieCardGrid from "../movie-card-grid/MovieCardGrid";
+import MovieCardGrid from "../MovieCardGrid";
 const LayoutDiv = styled.div`
     margin-top: 10px;
     background: #232323;

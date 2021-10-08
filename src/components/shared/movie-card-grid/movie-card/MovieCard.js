@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SECONDARY_DARK, FONT_DARK } from '../../../style/constants'; 
+import { SECONDARY_DARK, FONT_DARK } from '../../../../style/constants'; 
 import PropTypes from 'prop-types';
 
 const MovieCardImage = styled.img`
