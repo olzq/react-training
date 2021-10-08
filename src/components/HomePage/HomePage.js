@@ -1,11 +1,11 @@
 import React from 'react';  
 import SearchHeader from '../shared/search-header/SearchHeader'
-import MoviesList from '../shared/MoviesList'
+import Layout from '../shared/movie-list/Layout'
 import Footer from '../shared/Footer'
 const HomePage = () => 
 <>
     <SearchHeader />
-    <MoviesList />
+    <Layout />
     <Footer />
 </>
 export default HomePage;  

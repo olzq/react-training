@@ -12,8 +12,6 @@ const Input = styled.input`
     font-size: 22px;
 `;
 
-const SearchInput = () => <Input 
-                            placeholder="What do you want to watch?"
-                          />
+const SearchInput = () => <Input placeholder="What do you want to watch?"/>
 
 export default SearchInput
