@@ -1,11 +1,13 @@
 import React from 'react';  
 import SearchHeader from '../shared/search-header/SearchHeader'
-import Layout from '../shared/movie-list/Layout'
+import MovieCardGrid from '../shared/movie-cards-grid/MovieCardGrid'
 import Footer from '../shared/Footer'
+import ControlsLayout from '../shared/Main-content-controls/ControlsLayout';
 const HomePage = () => 
 <>
     <SearchHeader />
-    <Layout />
+    <ControlsLayout/>
+    <MovieCardGrid />
     <Footer />
 </>
 export default HomePage;  
