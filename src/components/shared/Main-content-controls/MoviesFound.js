@@ -7,7 +7,6 @@ const Paragraph = styled.p`
     margin-bottom: 30px;
 `;
 
-
 const MoviesFound = ({count}) => <Paragraph>{count} movies found</Paragraph>
 
 MoviesFound.propTypes = {

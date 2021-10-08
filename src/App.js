@@ -7,7 +7,6 @@ const Div = styled.div`
  background-color: ${MAIN_BACKGROUND_COLOR};
  font-family: "Roboto", sans-serif;
  color: ${WHITE};
- height: 100vh;
  padding: 52px 0px 52px 52px;
 `;
 const App = ({ children }) => 

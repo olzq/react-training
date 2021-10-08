@@ -1,15 +1,19 @@
 import React from "react"
 import styled from "styled-components";
+import { PRIMARY_RED } from '../../../style/constants'
 
-const Span = styled.span`
-   color: red;
-   font-size: 23px;
-   font-family: serif;
+
+const RedText = styled.span`
+    color: ${PRIMARY_RED};
+`;
+
+const BoldText = styled.span`
+    font-weight: 700;
 `;
 
 const NetflixLabel = () => 
-<Span>
-    netflixroulette
-</Span>
+<RedText>
+    <BoldText>netflix</BoldText>roulette
+</RedText>
 
 export default NetflixLabel

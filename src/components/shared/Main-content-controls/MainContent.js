@@ -1,18 +1,18 @@
 import React from "react"
 import styled from "styled-components"
-import Controls from "./Controls";
+import Controls from "./Controls"
+import MovieCardGrid from "../movie-card-grid/MovieCardGrid";
 const LayoutDiv = styled.div`
     margin-top: 10px;
     background: #232323;
-    height: 50vh;
     padding: 15px 40px;
 `;
 
-
-
-const Layout = () => 
+const MainContent = () => 
 <LayoutDiv>
     <Controls/>
+    <MovieCardGrid/>
 </LayoutDiv>
 
-export default Layout
+
+export default MainContent
