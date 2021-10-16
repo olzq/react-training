@@ -1,9 +1,9 @@
-import avengersPoster from "../images/avengers.jpg";
-import bohemianRhapsodyPoster from "../images/rapsody.jpg";
-import inceptionPoster from "../images/inception.jpg";
-import killBillPoster from "../images/kill-bill.jpg";
-import pulpFictionPoster from "../images/pulp-fiction.jpg";
-import reservoirDogsPoster from "../images/reservoir-dogs.jpg";
+import avengersPoster from "../assets/images/avengers.jpg";
+import bohemianRhapsodyPoster from "../assets/images/rapsody.jpg";
+import inceptionPoster from "../assets/images/inception.jpg";
+import killBillPoster from "../assets/images/kill-bill.jpg";
+import pulpFictionPoster from "../assets/images/pulp-fiction.jpg";
+import reservoirDogsPoster from "../assets/images/reservoir-dogs.jpg";
 import { GENRES } from "../components/shared/Constants";
 function createMovie(title, releaseDate, genres, poster) {
   return {
