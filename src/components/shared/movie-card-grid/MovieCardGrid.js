@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MovieService from "../../../containers/StaticMockData";
+import MovieService from "../../../services/StaticMockData";
 import MovieCard from "./movie-card/MovieCard";
 
 const Wrapper = styled.div`

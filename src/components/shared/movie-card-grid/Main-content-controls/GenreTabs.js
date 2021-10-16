@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-
-const genres = ["ALL", "DOCUMENTARY", "COMEDY", "HORROR", "CRIME"];
+import { Genres } from "../../../../services/StaticMockData";
 
 const GenreTab = styled.span`
   padding: 10px 15px;
@@ -12,14 +11,11 @@ GenreTab.propTypes = {
   isActive: PropTypes.bool.isRequired,
 };
 
-const GenreTabs = () => (
-  <>
-    {genres.map((val, indx) => (
-      <GenreTab key={val + indx} isActive={indx === 0}>
-        {val}
-      </GenreTab>
-    ))}
-  </>
-);
+const GenreTabs = () =>
+  Genres.map((val, indx) => (
+    <GenreTab key={val + indx} isActive={indx === 0}>
+      {val}
+    </GenreTab>
+  ));
 
 export default GenreTabs;
