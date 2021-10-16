@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MovieService from "../../../services/StaticMockData";
+import MovieService from "../../../utils/services/StaticMockData";
 import MovieCard from "./movie-card/MovieCard";
 
 const Wrapper = styled.div`
@@ -13,12 +13,13 @@ const Wrapper = styled.div`
   grid-gap: 1em;
 `;
 
-const MovieCardGrid = () => (
-  <Wrapper>
-    {MovieService.getMovies().map((movie, idx) => (
+const MovieCardGrid = () => {
+ const movies = MovieService.getMovies();
+ return <Wrapper>
+    {movies.map((movie, idx) => (
       <MovieCard key={idx} movie={movie} />
     ))}
   </Wrapper>
-);
+}
 
 export default MovieCardGrid;

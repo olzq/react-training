@@ -41,14 +41,14 @@ const MovieCard = (props) => {
   const releaseYear = releaseDate.getFullYear();
 
   return (
-    <>
+    <div>
       <MovieCardImage src={poster} />
       <MovieCardInfo>
         <MovieCardTitle>{title}</MovieCardTitle>
         <MovieCardReleaseDate>{releaseYear}</MovieCardReleaseDate>
         <MovieCardGenres>{genres}</MovieCardGenres>
       </MovieCardInfo>
-    </>
+    </div>
   );
 };
 
