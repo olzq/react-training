@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { SORT_OPTION_VALUES } from "../../Constants";
 
 const MovieSortDropdown = styled.span`
   float: right;
@@ -19,8 +20,8 @@ const Sorter = () => (
   <MovieSortDropdown>
     <MovieSortText>SORT BY</MovieSortText>
     <Dropdown>
-      <option value="0">RELEASE DATE</option>
-      <option value="1">TITLE</option>
+      <option value={SORT_OPTION_VALUES.RELEASE_DATE}>RELEASE DATE</option>
+      <option value={SORT_OPTION_VALUES.TITLE}>TITLE</option>
     </Dropdown>
   </MovieSortDropdown>
 );

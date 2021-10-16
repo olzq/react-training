@@ -43,11 +43,8 @@ const movies = [
   createMovie("Kill Bill", new Date(2005, 3, 21), "genre", killBillPoster),
 ];
 
-const Genres = ["ALL", "DOCUMENTARY", "COMEDY", "HORROR", "CRIME"];
-
 const MovieService = {
   getMovies: () => movies,
 };
 
 export default MovieService;
-export { Genres };

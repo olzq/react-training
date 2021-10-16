@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { Genres } from "../../../../services/StaticMockData";
+import { GENRES } from "../../Constants";
 
 const GenreTab = styled.span`
   padding: 10px 15px;
@@ -12,7 +12,7 @@ GenreTab.propTypes = {
 };
 
 const GenreTabs = () =>
-  Genres.map((val, indx) => (
+  GENRES.map((val, indx) => (
     <GenreTab key={val + indx} isActive={indx === 0}>
       {val}
     </GenreTab>
