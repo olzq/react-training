@@ -33,18 +33,23 @@ const MovieCardGenres = styled.span`
   color: ${SECONDARY_DARK};
 `;
 
-const MovieCard = (props) => (
-  <div>
-    <MovieCardImage src={props.movie.poster} />
-    <MovieCardInfo>
-      <MovieCardTitle>{props.movie.title}</MovieCardTitle>
-      <MovieCardReleaseDate>
-        {props.movie.releaseDate.getFullYear()}
-      </MovieCardReleaseDate>
-      <MovieCardGenres>{props.movie.genres}</MovieCardGenres>
-    </MovieCardInfo>
-  </div>
-);
+const MovieCard = (props) => {
+  const {
+    movie: { poster, title, releaseDate, genres },
+  } = props;
+  const releaseYear = releaseDate.getFullYear();
+
+  return (
+    <div>
+      <MovieCardImage src={poster} />
+      <MovieCardInfo>
+        <MovieCardTitle>{title}</MovieCardTitle>
+        <MovieCardReleaseDate>{releaseYear}</MovieCardReleaseDate>
+        <MovieCardGenres>{genres}</MovieCardGenres>
+      </MovieCardInfo>
+    </div>
+  );
+};
 
 MovieCard.propTypes = {
   movie: PropTypes.shape({
