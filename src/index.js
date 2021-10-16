@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.js";
-import ErrorBoundary from "./components/shared/ErrorBoundry/ErrorBoundry.js";
+import ErrorBoundary from "./components/ErrorBoundry/ErrorBoundry.js";
 import "./style/reset.css";
 
 ReactDOM.render(
