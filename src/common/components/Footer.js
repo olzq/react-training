@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { SECONDARY_DARK } from "../../style/constants";
-import NetflixLabel from "./search-header/NetflixLabel";
+import NetflixLabel from "./NetflixLabel";
 
 const Wrapper = styled.footer`
   padding: 1em 1em;

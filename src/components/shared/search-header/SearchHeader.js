@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import backGroundImage from "../../../assets/images/header-blured-dark.jpg";
-import NetflixLabel from "./NetflixLabel";
+import NetflixLabel from "../../../common/components/NetflixLabel";
 import AddMovieButton from "./AddMovieButton";
 import SearchControls from "./searchControls";
 
