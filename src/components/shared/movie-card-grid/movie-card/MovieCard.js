@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { SECONDARY_DARK, FONT_DARK } from "../../../../style/constants";
 import PropTypes from "prop-types";
+import { GENRES } from "../../Constants";
 
 const MovieCardImage = styled.img`
   width: 100%;
@@ -55,7 +56,7 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
     releaseDate: PropTypes.instanceOf(Date),
-    genres: PropTypes.string,
+    genres: PropTypes.oneOf(GENRES),
     poster: PropTypes.string,
   }),
 };
