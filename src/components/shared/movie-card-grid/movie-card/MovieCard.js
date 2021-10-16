@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { SECONDARY_DARK, FONT_DARK } from "../../../../style/constants";
 import PropTypes from "prop-types";
-import { GENRES } from "../../Constants";
+import { GENRES } from "../../../../constants/Constants";
 
 const MovieCardImage = styled.img`
   width: 100%;
