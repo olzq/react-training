@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { GENRES } from "../../../../constants/Constants";
+import { GENRES } from "../../../constants/Constants";
 
 const GenreTab = styled.span`
   padding: 10px 15px;

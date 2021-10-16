@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SORT_OPTION_VALUES } from "../../../../constants/Constants";
+import { SORT_OPTION_VALUES } from "../../../constants/Constants";
 
 const MovieSortDropdown = styled.span`
   float: right;
