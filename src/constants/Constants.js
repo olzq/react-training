@@ -1,0 +1,8 @@
+const GENRES = ["ALL", "DOCUMENTARY", "COMEDY", "HORROR", "CRIME"];
+
+const SORT_OPTION_VALUES = {
+  RELEASE_DATE: "0",
+  TITLE: "1",
+};
+
+export { GENRES, SORT_OPTION_VALUES };
