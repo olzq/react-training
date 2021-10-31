@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import { SORT_OPTION_VALUES } from "../../../constants/Constants";
 
 const MovieSortDropdown = styled.span`
@@ -16,14 +17,18 @@ const Dropdown = styled.select`
   border: none;
 `;
 
-const Sorter = () => (
+const Sorter = (props) => (
   <MovieSortDropdown>
     <MovieSortText>SORT BY</MovieSortText>
-    <Dropdown>
+    <Dropdown onChange={props.onSortChange}>
       <option value={SORT_OPTION_VALUES.RELEASE_DATE}>RELEASE DATE</option>
       <option value={SORT_OPTION_VALUES.TITLE}>TITLE</option>
     </Dropdown>
   </MovieSortDropdown>
 );
+
+Sorter.propTypes = {
+  onSortChange: PropTypes.func.isRequired,
+};
 
 export default Sorter;

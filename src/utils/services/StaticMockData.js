@@ -44,8 +44,22 @@ const movies = [
   createMovie("Kill Bill", new Date(2005, 3, 21), GENRES[4], killBillPoster),
 ];
 
+const getMovies = () => Promise.resolve(movies);
+const getGenres = () => Promise.resolve(GENRES);
+const addMovie = (movie) => Promise.resolve(movies.push(movie));
+const editMovie = (movie) =>
+  Promise.resolve((movie) => {
+    movies[movie.id] = movie;
+  });
+const deleteMovie = (movie) =>
+  Promise.resolve(movies.filter((m) => m !== movie));
+
 const MovieService = {
-  getMovies: () => movies,
+  getMovies,
+  getGenres,
+  addMovie,
+  editMovie,
+  deleteMovie,
 };
 
 export default MovieService;

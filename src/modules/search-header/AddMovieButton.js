@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
+const AddMovieButton = styled.button`
   color: red;
   height: 27px;
   font-size: larger;
@@ -12,7 +12,5 @@ const Button = styled.button`
   background: rgba(96, 96, 96, 0.68);
   border-radius: 4px;
 `;
-
-const AddMovieButton = () => <Button>+ ADD MOVIE</Button>;
 
 export default AddMovieButton;

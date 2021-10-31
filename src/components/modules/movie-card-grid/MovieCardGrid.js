@@ -14,12 +14,14 @@ const Wrapper = styled.div`
 `;
 
 const MovieCardGrid = () => {
- const movies = MovieService.getMovies();
- return <Wrapper>
-    {movies.map((movie, idx) => (
-      <MovieCard key={idx} movie={movie} />
-    ))}
-  </Wrapper>
-}
+  const movies = MovieService.getMovies();
+  return (
+    <Wrapper>
+      {movies.map((movie, idx) => (
+        <MovieCard key={idx} movie={movie} />
+      ))}
+    </Wrapper>
+  );
+};
 
 export default MovieCardGrid;

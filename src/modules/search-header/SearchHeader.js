@@ -4,6 +4,7 @@ import backGroundImage from "../../assets/images/header-blured-dark.jpg";
 import NetflixLabel from "../../common/components/NetflixLabel";
 import AddMovieButton from "./AddMovieButton";
 import SearchControls from "./searchControls";
+import PropTypes from "prop-types";
 
 const Header = styled.header`
   background-image: url(${backGroundImage});
@@ -44,14 +45,16 @@ const SearchBarRow = styled.div`
   display: inline-block;
 `;
 
-const SearchHeader = () => (
+const SearchHeader = (props) => (
   <Header>
     <FirstRow>
       <PositionLeft>
         <NetflixLabel />
       </PositionLeft>
       <PositionRight>
-        <AddMovieButton />
+        <AddMovieButton onClick={props.showAddMovieModal}>
+            + ADD MOVIE
+        </AddMovieButton>
       </PositionRight>
     </FirstRow>
     <FindMovieParagraph>FIND YOUR MOVIE</FindMovieParagraph>
@@ -60,5 +63,9 @@ const SearchHeader = () => (
     </SearchBarRow>
   </Header>
 );
+
+SearchHeader.propTypes = {
+  showAddMovieModal: PropTypes.func.isRequired,
+};
 
 export default SearchHeader;
