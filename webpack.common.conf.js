@@ -9,10 +9,10 @@ module.exports = {
     filename: "index_bundle.js",
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      title: `Webpack config`,
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: "./public/index.html",
+    //   title: `Webpack config`,
+    // }),
     new MiniCssExtractPlugin(),
   ],
   module: {

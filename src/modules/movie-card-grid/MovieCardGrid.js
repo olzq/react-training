@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import MovieService from "../../utils/services/StaticMockData";
 import MovieCard from "./movie-card/MovieCard";
+import PropTypes from "prop-types";
 
 const Wrapper = styled.div`
   display: grid;
@@ -13,13 +13,26 @@ const Wrapper = styled.div`
   grid-gap: 1em;
 `;
 
-const MovieCardGrid = () => {
- const movies = MovieService.getMovies();
- return <Wrapper>
-    {movies.map((movie, idx) => (
-      <MovieCard key={idx} movie={movie} />
-    ))}
-  </Wrapper>
-}
+const MovieCardGrid = (props) => {
+  const { movies } = props;
+  return (
+    <Wrapper>
+      {movies.map((movie, idx) => (
+        <MovieCard key={idx} movie={movie} />
+      ))}
+    </Wrapper>
+  );
+};
+
+MovieCardGrid.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      releaseDate: PropTypes.instanceOf(Date),
+      genres: PropTypes.string,
+      poster: PropTypes.string,
+    })
+  ),
+};
 
 export default MovieCardGrid;
